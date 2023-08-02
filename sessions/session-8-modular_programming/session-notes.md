@@ -143,7 +143,7 @@ Hope you are convinced at least now that functions are very useful and also pret
 
 Now let us get into the how part. How does a function look like:
 
-![FunctionDefn](/Users/apple/other/srini/my_projects/screencasts/presentations/images/FunctionDefn.png)
+![FunctionDefn](../images/FunctionDefn.png)
 
 - `def` is a keyword that tells python that a function is getting defined
 - Anything you declare or define needs a name so that you can use it or call it later... And function is no different. So it needs a name and that needs to be a valid python identifier. Refer to my previous sessions to figure out what those rules are. Or you could just *search* it on the internet.

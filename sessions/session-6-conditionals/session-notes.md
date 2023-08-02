@@ -160,13 +160,13 @@ Let us see some illustrations
 
 Nested 3 level block
 
-![CodeBlock1](/Users/apple/other/srini/my_projects/screencasts/presentations/images/CodeBlock1.png)
+![CodeBlock1](../images/CodeBlock1.png)
 
 
 
 Double nested 2 level block
 
-![CodeBlock2](/Users/apple/other/srini/my_projects/screencasts/presentations/images/CodeBlock2.png)
+![CodeBlock2](../images/CodeBlock2.png)
 
 Other languages do block differently - `{}` is common
 

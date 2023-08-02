@@ -87,7 +87,7 @@ while what_you_said != "done":
 
 The normal while loop
 
-<img src="/Users/apple/other/srini/my_projects/screencasts/presentations/images/while_basic_block.png" style="zoom:50%;" />
+![while_basic_block](../images/while_basic_block.png)
 
 Let us look at some code:
 
@@ -117,7 +117,7 @@ I love apple
 
 Let us introduce the `break` now:
 
-<img src="/Users/apple/other/srini/my_projects/screencasts/presentations/images/while_break_block.png" alt="while_break_block" style="zoom:50%;" />
+![while_break_block](../images/while_break_block.png)
 
 The code:
 
@@ -148,7 +148,7 @@ chickoo ! Yuck... I have had enough
 
 The `continue` is different. Let us look at a picture
 
-<img src="/Users/apple/other/srini/my_projects/screencasts/presentations/images/while_continue_block.png" alt="while_continue_block" style="zoom:50%;" />
+![while_continue_block](../images/while_continue_block.png)
 
 And now some code
 

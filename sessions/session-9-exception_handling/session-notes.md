@@ -60,7 +60,7 @@ Let us try to understand what is happening here. The function calling happens as
 
 Let us now talk about what is happening on the exception case. The exception actually happens in the function `c` but since `c` function is not doing anything about it, the exception moves down the stack and goes to `b` \- very similar to how the normal control goes back to the caller. Since nothing is done about the exception on `b` as well it moves down the stack to `a` . This is called **exception bubbling**.
 
-![exception_bubbling.png](:/157fea29f2ec45619102eec89d3bfe3c)
+![exception_bubbling](../images/exception_bubbling.png)
 
 I keep say nothing is done about the exception and you are probably thinking *"what should I do about an exception?"*. We will get to that soon but let me finish my story.
 
@@ -401,15 +401,15 @@ This is good progress, but we are still not out of the woods. In our earlier sec
 > 
 > Another related concept with respect to objects is inheritance. The idea is that the world is full of general kind of objects and specific kind of objects. Let me take an example. `Mammals` are a generic type of an object (which is alternatively called a class) and `Humans` , `Dogs` and `Cats` are specific type of objects which are all Mammals. So these specific objects all have the same characteristics of mammals. Mammals themselves are specific type of `Animals`.
 > 
-> ![object_hierarchy_real_world_example.png](:/c0f9770835784c3aa349c191de91064e)
+> ![object_hierarchy_real_world_example](../images/object_hierarchy_real_world_example.png)
 > 
 > So a Human is a Mammal which is an Animal. Inheritance means a `is a` relationship between types of objects or classes. When we work with objects in our code, Python will allow us to treat Humans as Mammals or Animals. As a parameter you might receive a Dog but you can treat it as a Mammal or Animal. That is because a Dog is a Mammal and an Animal. But if you receive a Dog and you want to treat it as a Human that won't be possible. In terms of OO, we call **Animal** the *"parent"* and **Mammal** the *"child"*. Similarly **Mammal** is considered the `parent class` and **Human**, **Dog** and **Cat** are called as `child classes`. I think that is a very short explanation of inheritance and that should be good enough for our needs
 
 In the context of Python exceptions, there is similar setup of hierarchy of exceptions. I am going to show a partial hierarchy which is relevant to our discussion:
 
-![python_exception_hierarchy_partial-min.png](:/69dcb4defde54ae3983e500f7397ee16)
+![python_exception_hierarchy_partial-min](../images/python_exception_hierarchy_partial-min.png)
 
-So right in the center of the picture we see our `Exception` class. It inherits from `BaseException` but that is not very relevant here (we are interest in just mammals not all animals). Almost all classes or objects which represent error - we have recently seen `ZeroDivisionError` are *"child classes"* of the `Exception` class. This means that Python will be ok to treat any of these errors as `Exception`s.
+So right in the center of the picture we see our `Exception` class. It inherits from `BaseException`, but that is not very relevant here (we are interested in just mammals not all animals). Almost all classes or objects which represent error - we have recently seen `ZeroDivisionError` are *"child classes"* of the `Exception` class. This means that Python will be ok to treat any of these errors as `Exception`s.
 
 Let us look at our code again:
 
@@ -498,7 +498,7 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'ab'
 ```
 
-Ok we are getting some kind of an error but it is very difficult to figure out what is happening. This is where we should be doing validation of input and raising proper errors to the user of the function. Let us do that:
+Ok, we are getting some kind of error, but it is very difficult to figure out what is happening. This is where we should be doing validation of input and raising proper errors to the user of the function. Let us do that:
 
 ```python
 def divide(dividend, divisor):

@@ -144,7 +144,7 @@ So as I said the first position is one the zeroth index. So now you have able to
 'Krishna deva raya'
 ```
 
-<img src="/Users/apple/other/srini/my_projects/screencasts/presentations/images/List-Index-Position-New.png" alt="List-Index-Position" style="zoom:60%;" />
+![List-Index-Position](../images/List-Index-Position-New.png)
 
 Now we have accessed all the elements of our friends array. What happens if we try to access with index 4 which will give us the 5th element. But there is no 5th friend in our list. Let us try and see.
 
